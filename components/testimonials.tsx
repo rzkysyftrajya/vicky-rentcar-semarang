@@ -1,22 +1,22 @@
 "use client"
 
 export function Testimonials() {
-  const images = [
-    '/testimoni/testi-1.webp',
-    '/testimoni/testi-2.webp',
-    '/testimoni/testi-3.webp',
-    '/testimoni/testi-4.webp',
-    '/testimoni/testi-5.webp',
-    '/testimoni/testi-6.webp',
-    '/testimoni/testi-7.webp',
-    '/testimoni/testi-8.webp',
-    '/testimoni/testi-9.webp',
-    '/testimoni/testi-10.webp',
-    '/testimoni/testi-11.webp',
-    '/testimoni/testi-12.webp',
-    '/testimoni/testi-13.webp',
-    '/testimoni/testi-14.webp',
-    '/testimoni/testi-15.webp',
+const images = [
+    '/testimoni/1.webp',
+    '/testimoni/2.webp',
+    '/testimoni/3.webp',
+    '/testimoni/4.webp',
+    '/testimoni/5.webp',
+    '/testimoni/6.webp',
+    '/testimoni/7.webp',
+    '/testimoni/8.webp',
+    '/testimoni/9.webp',
+    '/testimoni/10.webp',
+    '/testimoni/11.webp',
+    '/testimoni/12.webp',
+    '/testimoni/13.webp',
+    '/testimoni/14.webp',
+    '/testimoni/15.webp',
   ];
 
   return (

@@ -104,11 +104,11 @@ export default function GaleriPage() {
                 transitionDelay: `${index * 50}ms`,
                 transitionDuration: "600ms",
               }}
-              onClick={() => setSelectedImage(`/placeholder.svg?height=600&width=800&text=${item.title}`)}
+              onClick={() => setSelectedImage(`/testimoni/${(index % 25) + 1}.webp`)}
             >
               <div className="relative">
                 <img
-                  src={`/placeholder.svg?height=300&width=400&text=${item.title}`}
+                  src={`/testimoni/${(index % 25) + 1}.webp`}
                   alt={item.title}
                   className="w-full h-48 object-cover transition-transform group-hover:scale-110"
                 />
@@ -140,7 +140,7 @@ export default function GaleriPage() {
                 <X className="w-6 h-6" />
               </Button>
               <img
-                src={selectedImage || "/placeholder.svg"}
+                src={selectedImage || "/testimoni/1.webp"}
                 alt="Gallery Image"
                 className="max-w-full max-h-[80vh] object-contain rounded-lg"
               />

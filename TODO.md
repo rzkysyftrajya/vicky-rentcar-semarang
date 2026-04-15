@@ -1,10 +1,9 @@
-# Task Progress: Update Testimonials to Images
+# Task Progress: Replace testimonial and gallery images with public/testimoni images
 
-**Previous errors fixed (Shield + FAQ use client).**
+## TODO Steps:
+- [x] 1. Create TODO.md with plan breakdown
+- [x] 2. Update components/testimonials.tsx (replace old testi- paths with 1.webp-15.webp)
+- [x] 3. Update app/testimoni/page.tsx (replace placeholders with /testimoni/1.webp-20.webp)
+- [x] 4. Update app/galeri/page.tsx (replace placeholders with /testimoni/1.webp-25.webp cycling)
+- [x] 5. Verify changes and complete task
 
-**New Task: Replace testimonials with real images**
-- [x] **Step 1:** Create/update TODO.md
-- [x] **Step 2:** Replace components/testimonials.tsx with image grid from public/testimoni/*.webp
-Beberapa testimoni kita dari Makassar
-- [x] **Step 4:** Verify homepage renders images cleanly
-- [ ] **Step 5:** Complete

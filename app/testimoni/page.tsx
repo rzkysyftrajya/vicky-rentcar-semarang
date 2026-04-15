@@ -24,7 +24,7 @@ export default function TestimoniPage() {
   const testimonials = Array.from({ length: 20 }, (_, i) => ({
     id: i + 1,
     rating: Math.floor(Math.random() * 2) + 4, // 4 or 5 stars
-    image: `/placeholder.svg?height=100&width=100&text=Customer${i + 1}`,
+    image: `/testimoni/${(i % 20) + 1}.webp`,
     review: [
       "Pelayanan sangat memuaskan, mobil bersih dan terawat dengan baik!",
       "Driver sangat ramah dan mengenal rute dengan baik. Recommended!",
