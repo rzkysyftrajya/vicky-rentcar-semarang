@@ -10,43 +10,39 @@ export function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
 
-  // GAMBAR SLIDESHOW - 4 gambar mobil yang berganti di background
+  // GAMBAR SLIDESHOW - Real armada images optimized for hero
   const heroSlides = [
     {
-      // GAMBAR 1: Toyota Avanza Silver di background
-      image: "Toyota+Avanza+Silver+Premium",
+      image: "/armada/avanza.webp",
       title: "Toyota Avanza",
-      subtitle: "MPV Keluarga Terpopuler",
-      price: "Mulai Rp 350.000/hari",
-      features: ["7 Kursi", "AC", "Audio System"],
-      gradient: "from-blue-600/80 to-blue-800/90", // Overlay biru di atas gambar
+      subtitle: "MPV Keluarga Terpopuler di Semarang",
+      price: "Rp 350.000 /hari",
+      features: ["7 Penumpang", "AC Dingin", "Supir Profesional"],
+      gradient: "from-blue-600/80 to-blue-800/90",
     },
     {
-      // GAMBAR 2: Toyota Innova Putih di background
-      image: "Toyota+Innova+White+Luxury",
+      image: "/armada/innova-reborn.webp",
       title: "Toyota Innova Reborn",
-      subtitle: "Executive MPV Premium",
-      price: "Mulai Rp 600.000/hari",
-      features: ["8 Kursi", "Captain Seat", "Premium Interior"],
-      gradient: "from-gray-600/80 to-gray-800/90", // Overlay abu-abu di atas gambar
+      subtitle: "MPV Executive Premium",
+      price: "Rp 600.000 /hari",
+      features: ["Captain Seat", "Interior Mewah", "8 Penumpang"],
+      gradient: "from-gray-600/80 to-gray-800/90",
     },
     {
-      // GAMBAR 3: Toyota Fortuner Hitam di background
-      image: "Toyota+Fortuner+Black+SUV",
+      image: "/armada/fortuner.webp", 
       title: "Toyota Fortuner",
-      subtitle: "Premium SUV 4x4",
-      price: "Mulai Rp 1.300.000/hari",
-      features: ["7 Kursi", "4WD", "Luxury Features"],
-      gradient: "from-slate-700/80 to-slate-900/90", // Overlay gelap di atas gambar
+      subtitle: "SUV Tangguh 4x4",
+      price: "Rp 1.300.000 /hari",
+      features: ["4WD", "Luxury", "7 Penumpang"],
+      gradient: "from-slate-700/80 to-slate-900/90",
     },
     {
-      // GAMBAR 4: Toyota Alphard Pearl di background
-      image: "Toyota+Alphard+Pearl+Executive",
+      image: "/armada/toyota-alphard.webp",
       title: "Toyota Alphard",
-      subtitle: "Luxury Executive MPV",
-      price: "Mulai Rp 2.400.000/hari",
-      features: ["Executive Lounge", "Premium Comfort", "VIP Service"],
-      gradient: "from-purple-600/80 to-purple-800/90", // Overlay ungu di atas gambar
+      subtitle: "MPV Luxury Executive",
+      price: "Rp 2.400.000 /hari", 
+      features: ["VIP Lounge", "Full Premium", "8 Penumpang"],
+      gradient: "from-purple-600/80 to-purple-800/90",
     },
   ]
 
@@ -92,9 +88,10 @@ export function HeroSection() {
             >
               {/* GAMBAR MOBIL - Ini gambar utama yang jadi background */}
               <img
-                src={`/placeholder.svg?height=1080&width=1920&text=${slide.image}`}
-                alt={slide.title}
+                src={slide.image}
+                alt={`Rental ${slide.title} Semarang`}
                 className="w-full h-full object-cover"
+                loading="eager"
               />
               {/* OVERLAY GRADIENT - Layer warna di atas gambar biar text keliatan */}
               <div className={`absolute inset-0 bg-gradient-to-r ${slide.gradient}`}></div>

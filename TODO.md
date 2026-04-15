@@ -1,14 +1,10 @@
-# TODO: COMPLETE - npm install fixed
+# Task Progress: Update Testimonials to Images
 
-**npm install ✅** (react-day-picker ^9.14.0, vaul ^1.1.2, React 19 compatible)
+**Previous errors fixed (Shield + FAQ use client).**
 
-**GitHub upload:**
-- [ ] `git add .`
-- [ ] `git commit -m "Fix React deps + updates"`
-- [ ] `git push`
-
-**Next:**
-- [ ] `npm run dev` to test app
-- [ ] Address `npm audit fix` for security (optional)
-
-Changes saved in package.json, package-lock.json generated.
+**New Task: Replace testimonials with real images**
+- [x] **Step 1:** Create/update TODO.md
+- [x] **Step 2:** Replace components/testimonials.tsx with image grid from public/testimoni/*.webp
+- [x] **Step 3:** Add title "Beberapa testimoni kita dari Semarang"
+- [x] **Step 4:** Verify homepage renders images cleanly
+- [ ] **Step 5:** Complete

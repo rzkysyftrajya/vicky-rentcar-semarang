@@ -32,10 +32,8 @@ export function FleetPreview() {
   }));
 
   const handleWhatsAppBooking = (carName: string) => {
-    const message = `Halo CVATS RentCar! Saya tertarik untuk menyewa ${carName}. Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking.`;
-    const whatsappUrl = `https://wa.me/6285207265558?text=${encodeURIComponent(
-      message
-    )}`;
+    const message = `Halo PT VICKY RentCar Semarang! Saya tertarik menyewa ${carName}. Info ketersediaan, harga + supir, dan booking ya. Terima kasih!`;
+    const whatsappUrl = `https://wa.me/6282363389893?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -44,7 +42,7 @@ export function FleetPreview() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="orbitron text-3xl md:text-4xl font-bold mb-6 gradient-text">
-            Armada Terpopuler
+            Rental Mobil Semarang - Armada Terlengkap
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Pilihan kendaraan favorit pelanggan dengan kualitas terbaik dan
@@ -119,12 +117,12 @@ export function FleetPreview() {
                     </div>
                   )}
 
-                  <div className="text-center mt-4 pt-4 border-t border-gray-600">
+                <div className="text-center mt-4 pt-4 border-t border-gray-600">
                     <div className="text-sm font-bold text-yellow-600 mb-2">
-                      SEWA MOBIL + SUPIR
+                      MOBIL + SUPIR 12 JAM
                     </div>
                     <div className="text-xs text-emerald-600 font-semibold">
-                      HUBUNGI KAMI SEKARANG
+                      GRATIS JEMPUT AHY
                     </div>
                   </div>
                 </div>
