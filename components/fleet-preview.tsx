@@ -32,7 +32,7 @@ export function FleetPreview() {
   }));
 
   const handleWhatsAppBooking = (carName: string) => {
-    const message = `Halo PT VICKY RentCar Semarang! Saya tertarik menyewa ${carName}. Info ketersediaan, harga + supir, dan booking ya. Terima kasih!`;
+    const message = `Halo PT VICKY RentCar Makassar! Saya tertarik menyewa ${carName}. Info ketersediaan, harga + supir, dan booking ya. Terima kasih!`;
     const whatsappUrl = `https://wa.me/6282363389893?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -42,7 +42,7 @@ export function FleetPreview() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="orbitron text-3xl md:text-4xl font-bold mb-6 gradient-text">
-            Rental Mobil Semarang - Armada Terlengkap
+            Rental Mobil Makassar - Armada Terlengkap
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Pilihan kendaraan favorit pelanggan dengan kualitas terbaik dan

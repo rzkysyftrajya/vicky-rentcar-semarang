@@ -1,4 +1,4 @@
- "use client"
+"use client"
 
 import {
   Accordion,
@@ -24,7 +24,7 @@ const faqs = [
   {
     id: 'jemput',
     question: 'Apakah ada layanan jemput gratis?',
-    answer: 'Gratis jemput bandara Ahmad Yani (max 4 orang, 1x trip). Area Semarang kota gratis. Luar kota biaya tambahan nego. Order WA aja ya!',
+    answer: 'Gratis jemput bandara Sultan Hasanuddin (max 4 orang, 1x trip). Area Makassar kota gratis. Luar kota biaya tambahan nego. Order WA aja ya!',
   },
   {
     id: 'jaminan',
@@ -49,7 +49,7 @@ export function FAQSection() {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-lime-600 via-emerald-600 to-blue-600 bg-clip-text text-transparent">
-Rental Mobil Makassar
+            FAQ - Rental Mobil Makassar
           </h2>
           <p className="text-xl text-gray-600">
             Pertanyaan umum pelanggan tentang harga, syarat, dan layanan
@@ -89,7 +89,7 @@ Rental Mobil Makassar
             size="lg" 
             className="bg-gradient-to-r from-lime-600 to-emerald-600 hover:from-lime-700 text-xl px-12 py-6 font-bold shadow-xl"
             onClick={() => {
-booking rental mobil Makassar
+              const message = 'Halo, saya mau booking rental mobil Makassar. Tolong info promo dan ketersediaan ya!'
               window.open(`https://wa.me/6282363389893?text=${encodeURIComponent(message)}`, '_blank')
             }}
           >
@@ -101,4 +101,3 @@ booking rental mobil Makassar
     </section>
   )
 }
-

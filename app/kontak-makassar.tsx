@@ -10,7 +10,6 @@ import { Badge } from "@/components/ui/badge"
 import { MapPin, Phone, MessageCircle, Instagram, Clock, Car, CheckCircle } from "lucide-react"
 
 export default function KontakPage() {
-  // Tambahkan state untuk form validation dan animasi
   const [isVisible, setIsVisible] = useState(false)
   const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -31,7 +30,6 @@ export default function KontakPage() {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
-  // Tambahkan validation function
   const validateForm = () => {
     const errors: { [key: string]: string } = {}
 
@@ -52,7 +50,7 @@ export default function KontakPage() {
 
     const { nama, telepon, jenisMobil, tanggal, pesan } = formData
 
-    const message = `Halo CVATS RentCar!
+    const message = `Halo PT.VRN RentCar Makassar!
 
 Saya ingin melakukan booking rental mobil dengan detail berikut:
 
@@ -71,7 +69,6 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
   return (
     <div className="min-h-screen pt-20 pb-16">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="orbitron text-4xl md:text-6xl font-bold mb-6 gradient-text">Hubungi Kami</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -80,7 +77,6 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <div className="space-y-8">
             <Card className="glass-dark border-emerald-500/30">
               <CardHeader>
@@ -164,9 +160,7 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
             </Card>
           </div>
 
-          {/* Contact Information */}
           <div className="space-y-8">
-            {/* Contact Details */}
             <Card className="glass-dark border-blue-500/30">
               <CardHeader>
                 <CardTitle className="orbitron text-2xl text-blue-600">Informasi Kontak</CardTitle>
@@ -194,16 +188,16 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
                     action: () => window.open("https://instagram.com/vickyrentalnusantara_"),
                     color: "pink",
                   },
-{
-  icon: MapPin,
-  title: "Alamat",
-  content: "Jl. Minasa Upa N8 33, Gn. Sari, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90221",
-  action: () => window.open("https://maps.google.com/?q=Jl.+Minasa+Upa+N8+33,+Gn.+Sari,+Rappocini,+Makassar"),
-  color: "blue",
-},
-                ].map((contact) => (
+                  {
+                    icon: MapPin,
+                    title: "Alamat",
+                    content: "Jl. Minasa Upa N8 33, Gn. Sari, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90221",
+                    action: () => window.open("https://maps.google.com/?q=Jl.+Minasa+Upa+N8+33,+Gn.+Sari,+Rappocini,+Makassar"),
+                    color: "blue",
+                  },
+                ].map((contact, index) => (
                   <div
-                    key={contact.title}
+                    key={index}
                     onClick={contact.action}
                     className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/50 transition-all cursor-pointer border border-gray-700/50 hover:border-emerald-500/50"
                   >
@@ -219,7 +213,6 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
               </CardContent>
             </Card>
 
-            {/* Operating Hours */}
             <Card className="glass-dark border-emerald-500/30">
               <CardHeader>
                 <CardTitle className="orbitron text-2xl text-emerald-600 flex items-center">
@@ -245,7 +238,6 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
               </CardContent>
             </Card>
 
-            {/* Service Areas */}
             <Card className="glass-dark border-blue-500/30">
               <CardHeader>
                 <CardTitle className="orbitron text-2xl text-blue-600 flex items-center">
@@ -256,14 +248,14 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
               <CardContent>
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                   "Makassar Kota",
-"Bandara Sultan Hasanuddin",
-"Pantai Losari",
-"Pulau Samalona",
-"Malino",
-"Gowa",
-"Maros (Rammang-Rammang)",
-"Sekitarnya",
+                    "Makassar Kota",
+                    "Bandara Sultan Hasanuddin",
+                    "Pantai Losari",
+                    "Pulau Samalona",
+                    "Malino",
+                    "Gowa",
+                    "Maros (Rammang-Rammang)",
+                    "Sekitarnya",
                   ].map((area, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0" />
@@ -276,7 +268,6 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
           </div>
         </div>
 
-        {/* Google Maps */}
         <div className="mt-16">
           <Card className="glass-dark border-emerald-500/30">
             <CardHeader>
@@ -285,16 +276,16 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
             </CardHeader>
             <CardContent>
               <div className="aspect-video rounded-lg overflow-hidden">
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.247423523664!2d119.4062!3d-5.1478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDgnNTguMiJTIDEyMcKwMjQnMjIuMiJF!5e0!3m2!1sen!2sid!4v1738901234567"
-  width="100%"
-  height="100%"
-  style={{ border: "none" }}
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-  title="Lokasi PT VRN RentCar"
-/>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.247423523664!2d119.4062!3d-5.1478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDgnNTguMiJTIDEyMcKwMjQnMjIuMiJF!5e0!3m2!1sen!2sid!4v1738901234567"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lokasi PT.VRN RentCar Makassar"
+                />
               </div>
             </CardContent>
           </Card>
@@ -303,3 +294,4 @@ Mohon informasi lebih lanjut mengenai ketersediaan dan prosedur booking. Terima 
     </div>
   )
 }
+

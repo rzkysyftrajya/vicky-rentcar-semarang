@@ -12,11 +12,11 @@ export function HeroSection() {
 
   // GAMBAR SLIDESHOW - Real armada images optimized for hero
   const heroSlides = [
-    {
-      image: "/armada/avanza.webp",
-      title: "Toyota Avanza",
-      subtitle: "MPV Keluarga Terpopuler di Semarang",
-      price: "Rp 350.000 /hari",
+{
+  image: "/armada/avanza.webp",
+  title: "Toyota Avanza",
+  subtitle: "MPV Keluarga Terpopuler di Makassar",
+  price: "Rp 350.000 /hari",
       features: ["7 Penumpang", "AC Dingin", "Supir Profesional"],
       gradient: "from-blue-600/80 to-blue-800/90",
     },
@@ -66,7 +66,8 @@ export function HeroSection() {
   }
 
   const handleWhatsAppBooking = () => {
-    const message = `Halo PT VICKY RentCar Semarang! Saya tertarik dengan ${heroSlides[currentSlide].title}. Mohon informasi lebih lanjut mengenai ketersediaan dan harga terbaik.`
+    const message = `Halo PT VICKY RentCar Makassar! Saya tertarik dengan ${heroSlides[currentSlide].title}. Mohon informasi lebih lanjut mengenai ketersediaan dan harga terbaik.`
+
     const whatsappUrl = `https://wa.me/6282363389893?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
@@ -89,7 +90,7 @@ export function HeroSection() {
               {/* GAMBAR MOBIL - Ini gambar utama yang jadi background */}
               <img
                 src={slide.image}
-                alt={`Rental ${slide.title} Semarang`}
+                alt={`Rental ${slide.title} Makassar`}
                 className="w-full h-full object-cover"
                 loading="eager"
               />
@@ -139,7 +140,7 @@ export function HeroSection() {
                 <span className="text-lime-400">PT VICKY</span> <span className="text-blue-300">RENTAL NUSANTARA</span>
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl font-semibold text-blue-200 mb-2">
-Rental Mobil Terpercaya #1 di Semarang
+Rental Mobil Terpercaya #1 di Makassar
               </p>
               <p className="text-base md:text-lg text-lime-300">Jasa Rental Mobil Terbaik dan Murah</p>
             </div>

@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "./client-layout";
-import LayoutMakassar from "./layout-makassar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,14 +11,14 @@ export const metadata: Metadata = {
   description:
     "Jasa rental mobil terpercaya di Makassar 2025 dengan pengalaman 8+ tahun. Armada lengkap, driver bersertifikat, layanan 24/7. Harga mulai 300rb/hari.",
   keywords: [
-    "rental mobil semarang 2025",
-    "sewa mobil semarang murah",
-    "rental mobil driver semarang",
-    "sewa mobil lepas kunci semarang",
+    "rental mobil makassar 2025",
+    "sewa mobil makassar murah",
+    "rental mobil driver makassar",
+    "sewa mobil lepas kunci makassar",
   ].join(", "),
-  authors: [{ name: "PT.VRN SEMARANG" }],
-  creator: "PT.VRN SEMARANG",
-  publisher: "PT.VRN SEMARANG",
+  authors: [{ name: "PT.VRN MAKASSAR" }],
+  creator: "PT.VRN MAKASSAR",
+  publisher: "PT.VRN MAKASSAR",
   robots: {
     index: true,
     follow: true,
@@ -34,34 +33,32 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://cvatsrentcar.com",
-    siteName: "PT.VRN SEMARANG",
-    title: "PT.VRN SEMARANG 2025 | Rental Mobil Terpercaya & Murah",
+    url: "https://vickyrentcarmakassar.com",
+    siteName: "PT.VRN MAKASSAR",
+    title: "PT.VRN MAKASSAR 2025 | Rental Mobil Terpercaya & Murah di Makassar",
     description:
-      "Jasa rental mobil terpercaya di Semarang dengan pengalaman 8+ tahun. Armada lengkap, driver bersertifikat, layanan 24/7. Harga mulai 300rb/hari.",
+      "Jasa rental mobil terpercaya di Makassar dengan pengalaman 8+ tahun. Armada lengkap, driver bersertifikat, layanan 24/7. Harga mulai 300rb/hari.",
     images: [
       {
-url: "/logoVRN.png",
+        url: "/logoVRN.png",
         width: 1200,
         height: 630,
-        alt: "PT.VRN SEMARANG - Rental Mobil Terpercaya",
+        alt: "PT.VRN MAKASSAR - Rental Mobil Terpercaya di Makassar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CV ATS RentCar Medan 2025 | Rental Mobil Terpercaya",
+    title: "PT.VRN MAKASSAR 2025 | Rental Mobil Terpercaya",
     description:
-      "Jasa rental mobil terpercaya di Medan dengan pengalaman 8+ tahun. Harga mulai 300rb/hari.",
-    images: [
-"/logoVRN.png",
-    ],
+      "Jasa rental mobil terpercaya di Makassar dengan pengalaman 8+ tahun. Harga mulai 300rb/hari.",
+    images: ["/logoVRN.png"],
   },
   verification: {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://cvatsrentcar.com",
+    canonical: "https://vickyrentcarmakassar.com",
   },
   category: "business",
   generator: "v0.dev",
@@ -70,38 +67,38 @@ url: "/logoVRN.png",
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "PT.VRN SEMARANG",
-  alternateName: "PT.VRN SEMARANG",
+  name: "PT.VRN MAKASSAR",
+  alternateName: "PT.VRN MAKASSAR",
   description:
-    "Jasa rental mobil terpercaya di Semarang dengan pengalaman 8+ tahun.",
-  url: "https://cvatsrentcar.com",
-  telephone: "+62-852-0726-5558",
+    "Jasa rental mobil terpercaya di Makassar dengan pengalaman 8+ tahun.",
+  url: "https://vickyrentcarmakassar.com",
+  telephone: "+62 823 6338 9893",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Jl. Pringgan no 11 gg Bung Boniran",
-    addressLocality: "Semarang",
-    addressRegion: "Jawa Tengah",
-    postalCode: "50100",
+    streetAddress: "Jl. Minasa Upa N8 33, Gn. Sari, Kec. Rappocini",
+    addressLocality: "Makassar",
+    addressRegion: "Sulawesi Selatan",
+    postalCode: "90221",
     addressCountry: "ID",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "-6.9910",
-    longitude: "110.4208",
+    latitude: "-5.1470",
+    longitude: "119.4101",
   },
   openingHours: "Mo-Su 00:00-23:59",
   priceRange: "Rp 300,000 - Rp 2,500,000",
-image: "/logoVRN.png",
+  image: "/logoVRN.png",
   sameAs: [
-    "https://instagram.com/atsrentalmedan_",
-    "https://wa.me/6285207265558",
+    "https://instagram.com/vickyrentalnusantara",
+    "https://wa.me/6282363389893",
   ],
   serviceArea: {
     "@type": "GeoCircle",
     geoMidpoint: {
       "@type": "GeoCoordinates",
-      latitude: "-6.9910",
-      longitude: "110.4208",
+      latitude: "-5.1470",
+      longitude: "119.4101",
     },
     geoRadius: "200000",
   },
@@ -149,7 +146,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="canonical" href="https://cvatsrentcar.com" />
+        <link rel="canonical" href="https://vickyrentcarmakassar.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#7CB342" />
       </head>
@@ -162,3 +159,4 @@ export default function RootLayout({
     </html>
   );
 }
+
