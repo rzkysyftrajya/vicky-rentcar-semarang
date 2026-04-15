@@ -37,7 +37,7 @@ export function BookingForm() {
 
   const handleWhatsApp = async () => {
     setLoading(true)
-    const message = `Halo PT VICKY RentCar Semarang!
+    const message = `Halo PT VICKY RentCar Makassar!
 
 NAMA: ${formData.name}
 HP: ${formData.phone}
@@ -174,7 +174,7 @@ Mohon info ketersediaan dan harga terbaik!`
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start"><Check className="w-5 h-5 text-emerald-600 mt-0.5 mr-3 flex-shrink-0" /><span>Respon WA <strong>5 menit</strong></span></li>
                 <li className="flex items-start"><Check className="w-5 h-5 text-emerald-600 mt-0.5 mr-3 flex-shrink-0" /><span>Harga spesial <strong>Rp 300.000/hari</strong></span></li>
-                <li className="flex items-start"><Check className="w-5 h-5 text-emerald-600 mt-0.5 mr-3 flex-shrink-0" /><span>Gratis jemput <strong>Ahmad Yani</strong></span></li>
+                <li className="flex items-start"><Check className="w-5 h-5 text-emerald-600 mt-0.5 mr-3 flex-shrink-0" /><span>Gratis jemput <strong>Bandar Udara Internasional Sultan Hasanuddin</strong></span></li>
                 <li className="flex items-start"><Check className="w-5 h-5 text-emerald-600 mt-0.5 mr-3 flex-shrink-0" /><span><strong>Driver bersertifikat</strong> 8+ tahun pengalaman</span></li>
               </ul>
             </div>
