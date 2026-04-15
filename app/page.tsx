@@ -3,7 +3,7 @@ import { BookingForm } from "@/components/booking-form"
 import { TrustBadges } from "@/components/trust-badges"
 import { StatsCounter } from "@/components/stats-counter"
 import { FleetPreview } from "@/components/fleet-preview"
-import { Testimonials } from "@/components/testimonials"
+import { TestimonialsCarousel } from "@/components/testimonials-carousel"
 import { FAQSection } from "@/components/faq-fixed"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { CallToAction } from "@/components/call-to-action"
@@ -16,7 +16,7 @@ export default function HomePage() {
       <TrustBadges />
       <StatsCounter />
       <FleetPreview />
-      <Testimonials />
+      <TestimonialsCarousel />
       <WhyChooseUs />
       <FAQSection />
       <CallToAction />

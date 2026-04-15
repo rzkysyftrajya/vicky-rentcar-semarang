@@ -77,7 +77,7 @@ export function HeroSection() {
   return (
     <>
       {/* HERO SECTION - Clean tanpa CTA buttons */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative pt-[50vh] pb-[30vh] md:min-h-screen flex items-center justify-center overflow-hidden">
         {/* BACKGROUND SLIDESHOW - Ini yang di belakang, gambar mobil berganti-ganti */}
         <div className="absolute inset-0">
           {heroSlides.map((slide, index) => (
@@ -91,7 +91,7 @@ export function HeroSection() {
               <img
                 src={slide.image}
                 alt={`Rental ${slide.title} Makassar`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain object-center md:object-cover"
                 loading="eager"
               />
               {/* OVERLAY GRADIENT - Layer warna di atas gambar biar text keliatan */}

@@ -31,10 +31,10 @@ const images = [
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
           {images.map((src, index) => (
             <div key={index} className="group">
-              <div className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 group-hover:scale-105 h-64 bg-gradient-to-br from-lime-50 to-emerald-50">
+              <div className="relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg md:shadow-xl hover:shadow-xl md:hover:shadow-2xl transition-all duration-300 group-hover:scale-105 h-48 md:h-64 bg-gradient-to-br from-lime-50 to-emerald-50">
                 <img
                   src={src}
                   alt="Testimoni Pelanggan"
