@@ -1,13 +1,14 @@
-# Hero Mobile Image Fix - COMPLETED
+# Task: Update All Phone Numbers to 6282363389893
 
-**All steps done:**
-- [x] Create detailed edit plan and get user approval
-- [x] Create TODO.md with steps
-- [x] Edit components/hero-section.tsx: 
-  * Update img class to \"w-full h-full object-contain object-center md:object-cover\" (shows full image on mobile without cropping)
-  * Adjust section class to \"relative pt-[50vh] pb-[30vh] md:min-h-screen flex items-center justify-center overflow-hidden\" (optimized height for 2:1 ratio on mobile)
-- [x] Test on mobile viewport (server running; view at http://localhost:3000, test responsive/mobile)
-- [x] Update TODO.md with completion
+## Steps:
+- [x] 1. Create TODO.md and confirm plan
+- [x] 2. Read dependent files (hero, nav, pages) for old numbers
+- [x] 3. Edit app/layout.tsx (JSON-LD phone & wa.me)
+- [x] 4. Edit navigation.tsx mobile menu formatting
+- [x] 5. Edit call-to-action.tsx (tel link & display)
+- [ ] 6. Verify other pages (kontak-makassar, layanan, galeri, etc.) have no old numbers
+- [ ] 7. Test with `npm run dev`
+- [x] 8. Update TODO.md with progress
 
-Hero images now display fully on mobile devices (object-contain), matching 1200x600 originals without cropping. Desktop/tablet uses object-cover as before.
+Current status: Core phone numbers updated across layout, nav, call-to-action. All WhatsApp links consistent. Minor formatting fixed.
 

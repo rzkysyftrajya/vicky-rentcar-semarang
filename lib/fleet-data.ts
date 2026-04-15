@@ -80,17 +80,6 @@ export const fleetData = [
     features: "Safety Sense",
   },
   {
-    name: "Suzuki Ertiga",
-    image: "/armada/suzuki-ertiga.webp",
-    category: "mpv",
-    maticPrice: "Rp 450.000",
-    manualPrice: "Rp 400.000",
-    year: "2023",
-    fuel: "Bensin",
-    seats: "7",
-    features: "AC, Audio",
-  },
-  {
     name: "Mitsubishi Xpander",
     image: "/armada/xpander.webp",
     category: "mpv",

@@ -237,7 +237,7 @@ src="/logoVRN.png"
             <div className="p-6 border-t border-gray-200 bg-gray-50">
               <div className="text-center mb-4">
                 <div className="text-sm text-gray-600 mb-1">Hubungi Kami Sekarang</div>
-                <div className="text-lg font-bold text-blue-800">0852-0726-5558</div>
+                <div className="text-lg font-bold text-blue-800">0823-6338-9893</div>
               </div>
               <Button
                 onClick={() => {

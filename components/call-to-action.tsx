@@ -13,7 +13,7 @@ export function CallToAction() {
   }
 
   const handlePhoneCall = () => {
-    window.open("tel:+6285207265558", "_self")
+window.open("tel:+6282363389893", "_self")
   }
 
   return (
@@ -75,7 +75,7 @@ export function CallToAction() {
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center justify-center space-x-2">
                   <Phone className="w-4 h-4 text-emerald-400" />
-                  <span className="text-gray-300">+62 852 0726 5558</span>
++62 823 6338 9893
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <MessageCircle className="w-4 h-4 text-green-400" />
