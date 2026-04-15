@@ -91,7 +91,7 @@ export function Navigation() {
               <div className="flex items-center space-x-3">
                 <div className="relative">
                   <img
-                    src="/placeholder.svg?height=40&width=40&text=Logo"
+src="/logoVRN.png"
                     alt="CV ATS RentCar Logo"
                     className="w-8 h-8 lg:w-10 lg:h-10 rounded-lg object-cover shadow-md group-hover:shadow-lg transition-all duration-300"
                   />
@@ -193,7 +193,7 @@ export function Navigation() {
             <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-gray-50">
               <div className="flex items-center space-x-3">
                 <img
-                  src="/placeholder.svg?height=32&width=32&text=Logo"
+src="/logoVRN.png"
                   alt="PT VRN RentCar Logo"
                   className="w-8 h-8 rounded-lg object-cover shadow-md"
                 />

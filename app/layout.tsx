@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Jasa rental mobil terpercaya di Semarang dengan pengalaman 8+ tahun. Armada lengkap, driver bersertifikat, layanan 24/7. Harga mulai 300rb/hari.",
     images: [
       {
-        url: "/placeholder.svg?height=630&width=1200&text=PT.VRN+SEMARANG",
+url: "/logoVRN.png",
         width: 1200,
         height: 630,
         alt: "PT.VRN SEMARANG - Rental Mobil Terpercaya",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description:
       "Jasa rental mobil terpercaya di Medan dengan pengalaman 8+ tahun. Harga mulai 300rb/hari.",
     images: [
-      "/placeholder.svg?height=630&width=1200&text=CV+ATS+RentCar+Medan",
+"/logoVRN.png",
     ],
   },
   verification: {
@@ -90,7 +90,7 @@ const jsonLd = {
   },
   openingHours: "Mo-Su 00:00-23:59",
   priceRange: "Rp 300,000 - Rp 2,500,000",
-  image: "/placeholder.svg?height=400&width=600&text=PT.VRN+SEMARANG",
+image: "/logoVRN.png",
   sameAs: [
     "https://instagram.com/atsrentalmedan_",
     "https://wa.me/6285207265558",
