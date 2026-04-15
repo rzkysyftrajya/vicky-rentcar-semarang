@@ -27,7 +27,7 @@ export function Testimonials() {
             Beberapa testimoni kita dari Makassar
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Testimoni asli pelanggan rental mobil PT VICKY RentCar Semarang
+            Testimoni asli pelanggan rental mobil PT VICKY RentCar Makassar
           </p>
         </div>
 
