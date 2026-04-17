@@ -1,4 +1,4 @@
-# TODO: Rebrand Semarang → Makassar
+    # TODO: Rebrand Semarang → Makassar
 
 **Status: Approved by user**
 
