@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export function WhatsAppFloat() {
   const handleWhatsAppClick = () => {
-    const message = "Halo VRN! Saya tertarik dengan layanan rental mobil Anda. Mohon informasi lebih lanjut."
+    const message = "Halo VRN Makassar! Saya tertarik dengan layanan rental mobil Anda. Mohon informasi lebih lanjut."
     const whatsappUrl = `https://wa.me/6282363389893?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
