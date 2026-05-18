@@ -20,51 +20,51 @@ export default function LayananPage() {
 
   const serviceTypes = [
     {
-      title: "Lepas Kunci",
+      title: "Sewa Harian",
       icon: Car,
-      description: "Sewa mobil tanpa driver, bebas kemana saja dengan fleksibilitas penuh",
+      description: "Buat kamu yang butuh mobil nyaman untuk harian—urusan rute dan jadwal lebih simpel, layanan tetap rapi dan tepat waktu.",
       features: [
-        "Kebebasan mengemudi sendiri",
-        "Fleksibilitas waktu dan rute",
-        "Harga lebih ekonomis",
-        "Cocok untuk perjalanan pribadi",
+        "Unit bersih & terawat",
+        "Respon cepat sebelum berangkat",
+        "Driver (opsional) biar perjalanan makin santai",
+        "Cocok untuk kerja, kuliner, dan acara",
       ],
       color: "emerald",
     },
     {
-      title: "Dengan Driver",
+      title: "Sewa Bulanan",
       icon: UserCheck,
-      description: "Driver berpengalaman dan bersertifikat untuk perjalanan yang santai dan aman",
+      description: "Tenang, aktivitas satu bulan jadi lebih praktis. Mobil siap dipakai dengan standar layanan yang konsisten—tanpa ribet.",
       features: [
-        "Driver berpengalaman bersertifikat",
-        "Mengenal rute dan destinasi lokal",
-        "Perjalanan lebih santai dan aman",
-        "Cocok untuk wisata dan bisnis",
+        "Harga lebih hemat per periode",
+        "Fleksibel untuk kebutuhan bulanan",
+        "Performa armada tetap terjaga",
+        "Support 24/7 saat ada kebutuhan",
       ],
       color: "blue",
     },
     {
-      title: "Antar Jemput",
+      title: "Wedding Car",
       icon: MapPin,
-      description: "Layanan pickup profesional ke bandara, hotel, atau lokasi yang Anda tentukan",
+      description: "Mau hari bahagia terasa lebih lancar? Kami siapkan kendaraan yang nyaman, rapi, dan driver profesional supaya kamu fokus ke momen.",
       features: [
-        "Pickup ke bandara sultan hasanuddin",
-        "Antar ke hotel dan destinasi",
-        "Tepat waktu dan profesional",
-        "Tersedia 24/7",
+        "Kendaraan nyaman untuk acara spesial",
+        "Driver profesional & berpengalaman",
+        "Tepat waktu dan komunikasi jelas",
+        "Bisa disesuaikan kebutuhan acara",
       ],
       color: "emerald",
     },
     {
       title: "Paket Wisata",
       icon: Mountain,
-      description: "Paket lengkap untuk destinasi wisata populer di Sulawesi Selatan",
+      description: "Paket lengkap destinasi populer Makassar—dibantu driver dan all-in biar kamu tinggal menikmati perjalanan.",
       features: [
         "Pantai Losari dan Anjungan Pantai",
-  "Pulau Samalona dan Pulau Kodingareng Keke",
-  "Benteng Rotterdam dan wisata sejarah",
-  "Malino Highlands dan Air Terjun Takapala",
-  "Paket custom sesuai keinginan",
+        "Pulau Samalona dan Pulau Kodingareng Keke",
+        "Benteng Rotterdam dan wisata sejarah",
+        "Malino Highlands dan Air Terjun Takapala",
+        "Paket custom sesuai keinginan",
       ],
       color: "blue",
     },
@@ -133,7 +133,7 @@ export default function LayananPage() {
                   "KTP/SIM yang masih berlaku",
                   "Deposit sesuai kategori mobil",
                   "Minimal sewa 1 hari",
-                  "Area coverage Medan dan sekitarnya",
+                  "Area coverage Makassar dan sekitarnya",
                   "Usia minimal 21 tahun untuk lepas kunci",
                 ].map((requirement, index) => (
                   <li key={index} className="flex items-center space-x-3">
@@ -198,6 +198,75 @@ export default function LayananPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Paket Destinasi Populer Makassar */}
+        <div className="mb-16">
+          <div className="text-center mb-10">
+            <h2 className="orbitron text-3xl font-bold mb-4 gradient-text">Paket Destinasi Populer Makassar</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              All-in (Mobil + Driver + BBM) biar liburan lebih nyaman dan minim drama.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Malino Highlands",
+                highlight: "View pegunungan & udara segar",
+                price: "Rp 1.800.000 /paket",
+                bullets: ["Include Mobil + Driver + BBM", "Rute wisata Malino & sekitarnya", "Komunikasi sebelum keberangkatan"],
+              },
+              {
+                name: "Rammang-Rammang",
+                highlight: "Spot alam & perahu",
+                price: "Rp 2.200.000 /paket",
+                bullets: ["Include Mobil + Driver + BBM", "Penjemputan & pengantaran", "Driver membantu arah lokasi"],
+              },
+              {
+                name: "City Tour Makassar",
+                highlight: "Kota, kuliner, dan ikon Makassar",
+                price: "Rp 1.350.000 /paket",
+                bullets: ["Include Mobil + Driver + BBM", "Cocok untuk keluarga & rombongan", "Tersedia pilihan durasi"],
+              },
+            ].map((pkg, idx) => (
+              <Card
+                key={idx}
+                className="glass-dark border-emerald-500/30 hover:border-emerald-400/50 transition-all car-card"
+              >
+                <CardContent className="p-7">
+                  <div className="mb-3">
+                    <div className="inline-flex items-center rounded-full bg-emerald-500/20 px-4 py-1 text-emerald-600 font-semibold text-sm">
+                      Paket All-in
+                    </div>
+                  </div>
+                  <h3 className="orbitron text-2xl font-bold mb-2 text-gray-900">{pkg.name}</h3>
+                  <p className="text-gray-600 mb-4">{pkg.highlight}</p>
+                  <div className="text-3xl font-bold text-emerald-600 mb-4">{pkg.price}</div>
+                  <ul className="space-y-2">
+                    {pkg.bullets.map((b, i) => (
+                      <li key={i} className="flex items-start space-x-2">
+                        <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-600 text-sm">{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-6">
+                    <Button
+                      onClick={() => {
+                        const message = `Halo PT VRN RentCar! Saya tertarik booking paket destinasi: ${pkg.name}. Mohon estimasi jadwal, ketersediaan, dan detail all-in (Mobil + Driver + BBM).`;
+                        const whatsappUrl = `https://wa.me/6282363389893?text=${encodeURIComponent(message)}`;
+                        window.open(whatsappUrl, "_blank");
+                      }}
+                      className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg"
+                    >
+                      Booking via WhatsApp
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* CTA Section */}

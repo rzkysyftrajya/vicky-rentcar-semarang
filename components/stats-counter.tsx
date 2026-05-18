@@ -113,8 +113,8 @@ export function StatsCounter() {
                   <stat.icon className={`w-8 h-8 text-${stat.color}-600`} />
                 </div>
                 <div className={`orbitron text-4xl font-bold mb-2 text-${stat.color}-600`}>
-                  {counts[stat.key as keyof typeof counts]}
-                  {stat.suffix}
+                  {isVisible ? counts[stat.key as keyof typeof counts] : "—"}
+                  {isVisible ? stat.suffix : ""}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
               </CardContent>

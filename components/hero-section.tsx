@@ -136,13 +136,15 @@ export function HeroSection() {
             <div
               className={`mb-8 md:mb-12 transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 tracking-tight">
-                <span className="text-lime-400">PT VICKY</span> <span className="text-blue-300">RENTAL NUSANTARA</span>
-              </h1>
-              <p className="text-lg md:text-xl lg:text-2xl font-semibold text-blue-200 mb-2">
-Rental Mobil Terpercaya #1 di Makassar
-              </p>
-              <p className="text-base md:text-lg text-lime-300">Jasa Rental Mobil Terbaik dan Murah</p>
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 tracking-tight">
+                  <span className="text-lime-400">Jemput Bandara</span> <span className="text-blue-300">Gratis!</span>
+                </h1>
+                <p className="text-lg md:text-xl lg:text-2xl font-semibold text-blue-200 mb-2">
+                  Rental Mobil Nyaman & Terpercaya di Makassar
+                </p>
+                <p className="text-base md:text-lg text-lime-300">
+                  Udah siapin mobilnya, kami yang antar jemput—tinggal berangkat. 
+                </p>
             </div>
 
             {/* INFO MOBIL SAAT INI - Sync dengan gambar yang tampil */}
@@ -198,7 +200,7 @@ Rental Mobil Terpercaya #1 di Makassar
               <Button
                 onClick={handleWhatsAppBooking}
                 size="lg"
-                className="bg-white text-lime-600 hover:bg-gray-100 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all text-sm md:text-base w-full sm:w-auto"
+                className="bg-white text-lime-600 hover:bg-gray-100 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all text-sm md:text-base w-full sm:w-auto ring-2 ring-white/30"
               >
                 <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                 BOOKING VIA WHATSAPP

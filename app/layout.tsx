@@ -34,14 +34,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://cvatsrentcar.com",
+    url: "https://vickyrentcarmakassar.com",
     siteName: "PT.VRN MAKASSAR",
     title: "PT.VRN MAKASSAR 2025 | Rental Mobil Terpercaya & Murah",
+
     description:
       "Jasa rental mobil terpercaya di Makassar dengan pengalaman 8+ tahun. Armada lengkap, driver bersertifikat, layanan 24/7. Harga mulai 300rb/hari.",
     images: [
       {
-url: "/logoVRN.png",
+        url: "/logoVRN.png",
         width: 1200,
         height: 630,
         alt: "PT.VRN MAKASSAR - Rental Mobil Terpercaya",
@@ -50,18 +51,16 @@ url: "/logoVRN.png",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CV ATS RentCar Medan 2025 | Rental Mobil Terpercaya",
+    title: "PT.VRN MAKASSAR 2025 | Rental Mobil Terpercaya",
     description:
-      "Jasa rental mobil terpercaya di Medan dengan pengalaman 8+ tahun. Harga mulai 300rb/hari.",
-    images: [
-"/logoVRN.png",
-    ],
+      "Jasa rental mobil terpercaya di Makassar dengan pengalaman 8+ tahun. Harga mulai 300rb/hari.",
+    images: ["/logoVRN.png"],
   },
   verification: {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://cvatsrentcar.com",
+    canonical: "https://vickyrentcarmakassar.com",
   },
   category: "business",
   generator: "v0.dev",
@@ -74,8 +73,8 @@ const jsonLd = {
   alternateName: "PT.VRN MAKASSAR",
   description:
     "Jasa rental mobil terpercaya di Makassar dengan pengalaman 8+ tahun.",
-  url: "https://cvatsrentcar.com",
-telephone: "+6282363389893",
+  url: "https://vickyrentcarmakassar.com",
+  telephone: "+6282363389893",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Jl. Pringgan no 11 gg Bung Boniran",
@@ -91,10 +90,10 @@ telephone: "+6282363389893",
   },
   openingHours: "Mo-Su 00:00-23:59",
   priceRange: "Rp 300,000 - Rp 2,500,000",
-image: "/logoVRN.png",
+  image: "/logoVRN.png",
   sameAs: [
-    "https://instagram.com/atsrentalmedan_",
-"https://wa.me/6282363389893",
+    "https://instagram.com/vickyrentalnusantara",
+    "https://wa.me/6282363389893",
   ],
   serviceArea: {
     "@type": "GeoCircle",
@@ -164,7 +163,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="canonical" href="https://cvatsrentcar.com" />
+        <link rel="canonical" href="https://vickyrentcarmakassar.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#7CB342" />
       </head>
