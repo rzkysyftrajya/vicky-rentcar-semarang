@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "./client-layout";
-import LayoutMakassar from "./layout-makassar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,7 +36,6 @@ export const metadata: Metadata = {
     url: "https://vickyrentcarmakassar.com",
     siteName: "PT.VRN MAKASSAR",
     title: "PT.VRN MAKASSAR 2025 | Rental Mobil Terpercaya & Murah",
-
     description:
       "Jasa rental mobil terpercaya di Makassar dengan pengalaman 8+ tahun. Armada lengkap, driver bersertifikat, layanan 24/7. Harga mulai 300rb/hari.",
     images: [
@@ -144,14 +142,13 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <head>
+        {/* JSON-LD Schema Markup */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script
-          type="text/plain"
-          dangerouslySetInnerHTML={{ __html: '<!-- Google tag (gtag.js) -->' }}
-        />
+        
+        {/* Google tag (gtag.js) - AW-18095006448 */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18095006448"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -163,6 +160,7 @@ export default function RootLayout({
             `,
           }}
         />
+        
         <link rel="canonical" href="https://vickyrentcarmakassar.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#7CB342" />
